@@ -2,7 +2,7 @@
 name = input("Enter Student Name : ")
 print(f"Welcome To Python Tutorial System {name}!")
 print(""*50)
-
+    
 #Board
 print("="*30)
 print("PYTHON TUTORIAL SYSTEM")
@@ -364,4 +364,136 @@ elif lesson == "8" :
     print("\nLets learn for loop first.")
     
     print("\nfor loop")
-    print("Repeats instructions ")
+    print("Repeats instructions for each item in a sequence. ")
+    
+    print("\nSyntax :")
+    print("for (variable) in (sequence) :")
+    print("  (statement) ")
+    
+    print("\nvariable - receives each item. ")
+    print("sequence - items to loop through. ")
+    print("statement - the loop body")
+    
+    print("\nFor Example :")
+    print("Input :")
+    print("for number in range(4) :")
+    print("  print(Study Python) ")
+    
+    print("Output :")
+    for number in range(4) :
+        print("Study Python")
+    
+    print("\nNext what if we want the system to count from 1 to 5?")
+    
+    print("\nInput :")
+    print("for number in range(1, 6) :")
+    print("  print(number) ")
+    
+    print("Output :")
+    for number in range(1, 6) :
+        print(number)
+        
+    print("\nHow it works :")
+    print("Start value 1 is included, the stop value 6 is excluded. ")
+    print("Each iteration assigns the next value to our variable (number) ")
+    print("print(number) displays that value, after 5 loop ends. ")
+    
+    print("\nNow what if we want the system to count down from 5 to 1?")
+    
+    print("\nInput :")
+    print("for number in range(5, 0, -1) :") 
+    print("  print(number)") 
+    
+    print("Output :")
+    for number in range(5, 0, -1) :
+        print(number)
+    
+    print("\nHow it works :")
+    print("Value starts at 5. ")
+    print("Stops before 0.")
+    print("-1 decreases value by 1. ")
+    print("print(number) prints the value of variable (number). ")
+    
+    print("\nLastly let's learn while loop. ")
+    
+    print("\nwhile loop")
+    print("Repeats instructions when a condition is true. ")
+    
+    print("\nSyntax :")
+    print("while (condition) :")
+    print("  (statement) ")
+    
+    print("\ncondition - checked before each iteration. ")
+    print("statement - runs while the condition is true. ")
+    
+    print("\nFor Example :")
+    print("Input :")
+    print("count = 1")
+    print("while count <= 5 :")
+    print("  print(count) ")
+    print("  count += 1")
+    
+    print("Output :")
+    count = 1
+    while count <= 5 :
+        print(count)
+        count += 1
+    
+    print("\nNow what if we want the system to count down from 5 to 1?")
+    
+    print("\nInput :")
+    print("count = 5")
+    print("while count >= 1 :")
+    print("  print(count) ")
+    print("  count -= 1")
+    
+    print("Output :")
+    count = 5
+    while count >= 1 :
+        print(count)
+        count -= 1
+    
+    print("\nHow it works :")
+    print("Value starts at 5. ")
+    print("Repeats while count is greater than or equal to 1.")
+    print("count -=1 decreases value by 1. ")
+    print("print(number) prints the value of variable (number). ")
+    print("Stops when the condition is false (when count is less than 1).")
+    
+    print(f"\nThats all for lesson 8 {name}, give iterations and loops a try! ")
+    
+    while True :
+        print("\n[1] Learn Another Lesson")
+        print("[2] Exit")
+        
+        user = input("\nChoose 1 or 2 only : ")
+        
+        if user == "1" :
+            print("="*30)
+            print("PYTHON TUTORIAL SYSTEM")
+            print("="*30)
+            print("")
+
+#Lessons
+            print("[1] Lesson 1 (PRINT FUNCTION)")
+            print("[2] Lesson 2 (VARIABLES)")
+            print("[3] Lesson 3 (DATA TYPES)")
+            print("[4] Lesson 4 (BASIC INPUT AND OUTPUT)")
+            print("[5] Lesson 5 (CONDITIONAL STATEMENTS)")
+            print("[6] Lesson 6 (NESTED CONDITION)")
+            print("[7] Lesson 7 (LOGICAL OPERATOR)")
+            print("[8] Lesson 8 (ITERATION AND LOOPS)")
+
+            print(f"\nWelcome To Python Tutorial System {name}!")
+
+#Choice
+            lesson = input("\nEnter Lesson Number : ")
+
+          
+    
+        elif user == "2" :
+            print(f"\nThank you for using this system {name}!")
+            break
+        
+        else : 
+            print("\nInvalid input Try again. ")
